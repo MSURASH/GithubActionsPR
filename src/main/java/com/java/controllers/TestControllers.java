@@ -8,7 +8,7 @@ public class TestControllers {
 	
 	@GetMapping("/")
 	public String test() {
-		return "2 testing...";
+		return "3 testing...";
 	}
 
 }
