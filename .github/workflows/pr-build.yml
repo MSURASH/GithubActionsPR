@@ -1,6 +1,17 @@
 name: Pull Request Java Build
 
 on:
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+        type: choice
+        options:
+        - info
+        - warning
+        - debug
   pull_request:
     branches:
       - develop  # Only run when PR targets 'develop'
